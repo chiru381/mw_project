@@ -1,0 +1,316 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "MW_FINAL_PROJECT",
+    "description": "Swagger UI for mw_final_project",
+    "contact": {
+      "email": "chiranjeevi@castusinfo.com"
+    }
+  },
+  "host": "localhost:4313",
+  "basePath": "/api",
+  "tags": [],
+  "paths": {
+    "/get-users": {
+      "get": {
+        "tags": ["get-users"],
+        "summary": "Get all user in system",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/user": {
+      "post": {
+        "description": "This API for authenticate users by typing username and password",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "User cerdentials",
+            "schema": {
+              "$ref": "#/definitions/userSchema"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/validateUser": {
+      "post": {
+        "description": "This API for authenticate users by typing username and password",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "User cerdentials",
+            "schema": {
+              "$ref": "#/definitions/Login"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "description": "This API for authenticate users by typing username and password",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "User cerdentials",
+            "schema": {
+              "$ref": "#/definitions/Login"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/change-password": {
+      "post": {
+        "description": "This API for authenticate users by typing username and password and newpassword",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "update",
+            "schema": {
+              "$ref": "#/changedifintion/ChangePassword"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/update-user": {
+      "put": {
+        "description": "This API for authenticate users by typing username and password",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "update",
+            "schema": {
+              "$ref": "#/Updatedefinitions/UpdateSchema"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/forgot-password": {
+      "post": {
+        "description": "This API for authenticate users by typing username and password",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "forgot password",
+            "schema": {
+              "$ref": "#/forgotdifintion/ForgotPassword"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "/reset-password": {
+      "post": {
+        "description": "This API for authenticate users by typing username and password",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "reset password",
+            "schema": {
+              "$ref": "#/resetdifintion/ResetPassword"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation"
+          },
+          "400": {
+            "description": "Invalid status value"
+          }
+        }
+      }
+    },
+    "definitions": {
+      "userSchema": {
+        "type": "object",
+        "properties": {
+          "first_name": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "user_id": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "password": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Updatedefinitions": {
+      "UpdateSchema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "first_name": {
+            "type": "string"
+          },
+          "last_name": {
+            "type": "string"
+          },
+          "user_id": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "phone_number": {
+            "type": "string"
+          }
+        }
+      },
+      "definition": {
+        "ValidateUser": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "example": "Raje123"
+            }
+          }
+        }
+      },
+      "definitionss": {
+        "Login": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string",
+              "example": "Raje123"
+            },
+            "password": {
+              "type": "string",
+              "example": "Raje@123"
+            }
+          }
+        }
+      },
+      "changedifintion": {
+        "ChangePassword": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "user_id": {
+              "type": "string",
+              "example": "Raje123"
+            },
+            "password": {
+              "type": "string",
+              "example": "Raje@123"
+            },
+            "newpassword": {
+              "type": "string",
+              "example": "Raje@1234"
+            }
+          }
+        }
+      },
+      "resetdifintion": {
+        "ResetPassword": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string"
+            },
+            "otp": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "forgotdifintion": {
+        "ForgotPassword": {
+          "type": "object",
+          "properties": {
+            "user_id": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

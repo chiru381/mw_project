@@ -1,0 +1,12 @@
+{
+  "jwtPrivateKey": "123456",
+  "dbIP": "",
+  "dbName": "dev_mindwavedb",
+  "dbUserName": "mw_user",
+  "dbPassword": "mindwave1@3$",
+  "JWT_SECRET": "123456",
+  "JWT_EXPIRES_IN": "30m",
+  "EMAIL_USER_NAME": "",
+  "EMAIL_PWD": "",
+  "API_URL": "mongodb://127.0.0.1:27017/dev_mindwavedb"
+}
