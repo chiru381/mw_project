@@ -1,0 +1,39 @@
+.create-user-container {
+  width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inputs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.create-user-container .userid-input-container {
+  width: 100% !important;
+  display: block !important;
+}
+.create-user-container .userid-input {
+  width: 100% !important;
+  display: block !important;
+}
+
+
+.create-user-container input {
+  width: 270px !important;
+}
+
+.create-user-container label,
+.create-user-container small {
+  display: block !important;
+}
+
+.create-user-container button {
+  width: 150px !important;
+}

@@ -1,0 +1,48 @@
+#dashboard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #fff;
+}
+
+#dashboard header h4 {
+  margin-left: 10px;
+}
+
+#dashboard main {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+#dashboard main button {
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#dashboard h2 {
+  text-align: center;
+}
+
+.action-icons {
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.search-error {
+  text-align: center;
+  color: var(--color-text);
+  font-weight: lighter;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+}

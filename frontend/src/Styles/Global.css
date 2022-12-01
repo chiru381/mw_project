@@ -1,0 +1,88 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #001e6c;
+  --color-text: #7f8487;
+  --color-box-shadow: #ddd;
+  --color-body-background: rgb(173, 33, 33);
+  --color-error: #FF0000;
+  --color-success: #4E9F3D;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 5px;
+}
+
+body {
+  margin: 0%;
+  font-family: "Lato", sans-serif;
+  background-color: var(--color-body-background);
+  position: relative;
+}
+
+h1 {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.btn {
+  padding: 13px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color-primary);
+  color: #fff;
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: -webkit-center;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+a {
+  color: var(--color-primary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mg-l {
+  margin-left: 70px;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+table td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #eee;
+  color: var(--color-text);
+}
+
+table th {
+  padding: 20px 10px;
+  letter-spacing: 1px;
+  background-color: #c4ddff;
+}

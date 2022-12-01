@@ -1,0 +1,24 @@
+.inputs {
+  margin: 15px 0;
+}
+
+.inputs label {
+  font-size: 17px;
+}
+
+.inputs input {
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 2px solid rgb(241, 236, 236);
+  background: transparent;
+  font-size: 15px;
+  width: 100%;
+}
+
+.inputs small {
+  color: red;
+}
+
+.inputs input:focus {
+  outline: none;
+}

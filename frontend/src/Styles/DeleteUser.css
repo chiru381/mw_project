@@ -1,0 +1,35 @@
+
+.delete-container {
+  background-color: #fff;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-45%, -50%);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-button {
+  width: 100px !important;
+  margin: 10px 5px !important;
+  padding: 8px !important;
+}
+
+.cancel-button {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  width: 100px;
+  color: var(--color-primary);
+  margin: 10px 5px;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-align: -webkit-center;
+  cursor: pointer;
+}

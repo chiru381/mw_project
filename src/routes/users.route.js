@@ -6,6 +6,7 @@ const updateUser = require("../controllers/updateUser.api");
 const forgotPassword = require("../controllers/forgotpassword.api");
 const resetPassword = require("../controllers/resetpassword.api");
 const changePassword = require("../controllers/changepassword.api");
+const deleteUser = require("../controllers/deleteuser.api");
 
 const express = require("express");
 const router = express.Router();
@@ -18,5 +19,6 @@ router.put("/update-user/:id", updateUser);
 router.post("/forgot-password", forgotPassword);
 router.post("/reset-password", resetPassword);
 router.post("/changePassword/:id", changePassword);
+router.delete("/deleteUser/:id", deleteUser);
 
 module.exports = router;

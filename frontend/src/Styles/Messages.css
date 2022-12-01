@@ -1,0 +1,76 @@
+.messages-container {
+  display: flex;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px var(--color-box-shadow);
+  overflow: hidden;
+  animation: show 0.3s, hide 0.3s 4.8s;
+  z-index: 10;
+}
+
+@keyframes show {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes hide {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.messages-container p {
+  margin: 0 !important;
+}
+
+.error {
+  background-color: #ffe8e8;
+}
+
+.close-icon-error {
+  color: var(--color-error);
+  cursor: pointer;
+}
+
+.bar-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--color-error);
+}
+
+.success {
+  background-color: #f2f9e8;
+}
+
+.close-icon-success {
+  color: var(--color-success);
+  cursor: pointer;
+}
+
+.bar-success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: var(--color-success);
+}
+
